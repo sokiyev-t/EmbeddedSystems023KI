@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+firmware = "build/electronic_safe.ino.hex"
+elf = "build/electronic_safe.ino.elf"
