@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "author": "GitHub Copilot",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-arduino-uno",
+      "id": "uno",
+      "top": -3.6,
+      "left": -3.6,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -100,
+      "left": 180,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -50,
+      "left": 120,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": -100,
+      "left": 300,
+      "attrs": { "label": "SW1" }
+    }
+  ],
+  "connections": [
+    ["uno:8", "led1:A", "green", ["h0"]],
+    ["led1:C", "r1:2", "green", ["v0"]],
+    ["r1:1", "uno:GND.1", "black", ["h0"]],
+    ["uno:5", "btn1:1", "blue", ["h0"]],
+    ["btn1:2", "uno:GND.2", "black", ["h0"]]
+  ],
+  "dependencies": {}
+}

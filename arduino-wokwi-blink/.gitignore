@@ -1,0 +1,5 @@
+.DS_Store
+.tmp_arduino_build/
+.tmp_arduino_buildsrc/
+.tmp_arduino_tmp/
+build/
